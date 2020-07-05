@@ -1,0 +1,10 @@
+<h1>Aulas</h1>
+
+<ul>
+{% for aula in aulas %}
+<li>
+  <!-- <img src="{{ aula.img }}" alt="{{ aula.nome }}" width="20" height="20"> -->
+  <a href="{{ aula.url }}">{{ aula.nome }}</a>
+</li>
+{% endfor %}
+</ul>
